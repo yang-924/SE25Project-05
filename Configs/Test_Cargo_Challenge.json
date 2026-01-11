@@ -1,0 +1,61 @@
+{
+    "configName": "Test Cargo - Windy Challenge",
+    "description": "Cargo delivery with strong wind for difficulty testing",
+    "version": "1.0",
+    "mission": {
+        "type": "Cargo",
+        "sceneName": "OutdoorsScene",
+        "missionName": "Cargo Wind Challenge",
+        "description": "Deliver package in challenging windy conditions",
+        "disasterSettings": {
+            "numberOfFires": 0,
+            "firePositions": [],
+            "photoDistance": 20,
+            "requirePhoto": true,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 5,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 70,
+                "y": 0,
+                "z": 70
+            },
+            "deliveryLockerPositions": [
+                {
+                    "x": 70,
+                    "y": 0,
+                    "z": 70
+                },
+                {
+                    "x": 75,
+                    "y": 0,
+                    "z": 65
+                },
+                {
+                    "x": 65,
+                    "y": 0,
+                    "z": 75
+                }
+            ],
+            "useRandomDeliveryPosition": true,
+            "skipPickup": true
+        },
+        "waypointSettings": {
+            "waypointPositions": [],
+            "reachThreshold": 5
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.5,
+        "baseWindSpeed": 15.0,
+        "windDirection": 135,
+        "fogDensity": 0.2,
+        "windShearExponent": 0.3,
+        "gustIntensity": 0.5
+    }
+}

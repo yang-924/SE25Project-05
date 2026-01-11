@@ -1,0 +1,75 @@
+{
+    "configName": "City Cruise Route - Standard",
+    "description": "Constant speed cruise mission through city waypoints at 8m/s",
+    "version": "1.0",
+    "mission": {
+        "type": "Waypoint",
+        "sceneName": "City",
+        "missionName": "Cruise Control Route",
+        "description": "Maintain constant speed through waypoints",
+        "disasterSettings": {
+            "numberOfFires": 0,
+            "firePositions": [],
+            "photoDistance": 20,
+            "requirePhoto": false,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLockerPositions": [],
+            "useRandomDeliveryPosition": false,
+            "skipPickup": false
+        },
+        "waypointSettings": {
+            "waypointPositions": [
+                {
+                    "x": 100,
+                    "y": 50,
+                    "z": 100
+                },
+                {
+                    "x": 300,
+                    "y": 50,
+                    "z": 100
+                },
+                {
+                    "x": 300,
+                    "y": 50,
+                    "z": 300
+                },
+                {
+                    "x": 100,
+                    "y": 50,
+                    "z": 300
+                },
+                {
+                    "x": 100,
+                    "y": 50,
+                    "z": 100
+                }
+            ],
+            "reachThreshold": 10,
+            "cruiseSpeed": 8.0,
+            "enableCruiseControl": true,
+            "speedTolerance": 1.0,
+            "loopWaypoints": false
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.0,
+        "baseWindSpeed": 5.0,
+        "windDirection": 90,
+        "fogDensity": 0.0,
+        "windShearExponent": 0.3,
+        "gustIntensity": 0.8
+    }
+}

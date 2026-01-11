@@ -1,0 +1,70 @@
+{
+    "configName": "City Cruise Route - Slow Storm",
+    "description": "Low speed cruise mission at 5m/s in stormy weather (challenge mode)",
+    "version": "1.0",
+    "mission": {
+        "type": "Waypoint",
+        "sceneName": "City",
+        "missionName": "Storm Cruise Challenge",
+        "description": "Maintain constant low speed in extreme weather",
+        "disasterSettings": {
+            "numberOfFires": 0,
+            "firePositions": [],
+            "photoDistance": 20,
+            "requirePhoto": false,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLockerPositions": [],
+            "useRandomDeliveryPosition": false,
+            "skipPickup": false
+        },
+        "waypointSettings": {
+            "waypointPositions": [
+                {
+                    "x": 150,
+                    "y": 60,
+                    "z": 150
+                },
+                {
+                    "x": 250,
+                    "y": 60,
+                    "z": 200
+                },
+                {
+                    "x": 200,
+                    "y": 60,
+                    "z": 300
+                },
+                {
+                    "x": 100,
+                    "y": 60,
+                    "z": 250
+                }
+            ],
+            "reachThreshold": 8,
+            "cruiseSpeed": 5.0,
+            "enableCruiseControl": true,
+            "speedTolerance": 0.8,
+            "loopWaypoints": false
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.8,
+        "baseWindSpeed": 20.0,
+        "windDirection": 270,
+        "fogDensity": 0.4,
+        "windShearExponent": 0.35,
+        "gustIntensity": 1.5
+    }
+}

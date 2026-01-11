@@ -1,0 +1,67 @@
+{
+    "configName": "Test Recon Mission - Near Points",
+    "description": "Test reconnaissance mission with 3 close observation points",
+    "version": "1.0",
+    "mission": {
+        "type": "Recon",
+        "sceneName": "OutdoorsScene",
+        "missionName": "Near Recon Test",
+        "description": "Hover at 3 nearby observation points for reconnaissance",
+        "disasterSettings": {
+            "numberOfFires": 0,
+            "firePositions": [],
+            "photoDistance": 20,
+            "requirePhoto": true,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 5,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 100,
+                "y": 0,
+                "z": 100
+            },
+            "deliveryLockerPositions": [],
+            "useRandomDeliveryPosition": false,
+            "skipPickup": false
+        },
+        "waypointSettings": {
+            "waypointPositions": [],
+            "reachThreshold": 5
+        },
+        "reconSettings": {
+            "reconPoints": [
+                {
+                    "x": 40,
+                    "y": 25,
+                    "z": 40
+                },
+                {
+                    "x": 80,
+                    "y": 30,
+                    "z": 30
+                },
+                {
+                    "x": 60,
+                    "y": 25,
+                    "z": 70
+                }
+            ],
+            "reachThreshold": 3.0,
+            "hoverTime": 3.0,
+            "hoverStabilityThreshold": 2.0
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.0,
+        "baseWindSpeed": 3.0,
+        "windDirection": 270,
+        "fogDensity": 0.0,
+        "windShearExponent": 0.1,
+        "gustIntensity": 0.15
+    }
+}

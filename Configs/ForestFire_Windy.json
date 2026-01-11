@@ -1,0 +1,71 @@
+{
+    "configName": "Forest Fire Detection - Windy",
+    "description": "Forest fire detection with strong wind conditions",
+    "version": "1.0",
+    "mission": {
+        "type": "DisasterDetection",
+        "sceneName": "Forest",
+        "missionName": "Forest Fire Detection",
+        "description": "Locate forest fires in windy conditions",
+        "disasterSettings": {
+            "numberOfFires": 4,
+            "firePositions": [
+                {
+                    "x": 50,
+                    "y": 2,
+                    "z": 30
+                },
+                {
+                    "x": -80,
+                    "y": 2,
+                    "z": 60
+                },
+                {
+                    "x": 120,
+                    "y": 2,
+                    "z": -40
+                },
+                {
+                    "x": -50,
+                    "y": 2,
+                    "z": -70
+                },
+                {
+                    "x": 0,
+                    "y": 2,
+                    "z": 100
+                }
+            ],
+            "photoDistance": 20,
+            "requirePhoto": true,
+            "randomizePositions": true
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLockerPositions": [],
+            "useRandomDeliveryPosition": false,
+            "skipPickup": false
+        },
+        "waypointSettings": {
+            "waypointPositions": [],
+            "reachThreshold": 5
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.0,
+        "baseWindSpeed": 15.0,
+        "windDirection": 270,
+        "fogDensity": 0.1,
+        "windShearExponent": 0.4,
+        "gustIntensity": 2.0
+    }
+}

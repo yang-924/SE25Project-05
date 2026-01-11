@@ -1,0 +1,70 @@
+{
+    "configName": "Test Waypoint - Triangle Route",
+    "description": "Test waypoint mission with triangle route (simple 3 point pattern)",
+    "version": "1.0",
+    "mission": {
+        "type": "Waypoint",
+        "sceneName": "OutdoorsScene",
+        "missionName": "Triangle Route Test",
+        "description": "Fly a triangle pattern with 4 waypoints (return to start)",
+        "disasterSettings": {
+            "numberOfFires": 0,
+            "firePositions": [],
+            "photoDistance": 20,
+            "requirePhoto": true,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 5,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 100,
+                "y": 0,
+                "z": 100
+            },
+            "deliveryLockerPositions": [],
+            "useRandomDeliveryPosition": false,
+            "skipPickup": false
+        },
+        "waypointSettings": {
+            "waypointPositions": [
+                {
+                    "x": 0,
+                    "y": 20,
+                    "z": 0
+                },
+                {
+                    "x": 60,
+                    "y": 20,
+                    "z": 0
+                },
+                {
+                    "x": 30,
+                    "y": 20,
+                    "z": 52
+                },
+                {
+                    "x": 0,
+                    "y": 20,
+                    "z": 0
+                }
+            ],
+            "reachThreshold": 5.0,
+            "cruiseSpeed": 8.0,
+            "enableCruiseControl": true,
+            "speedTolerance": 1.5,
+            "loopWaypoints": false
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.2,
+        "baseWindSpeed": 5.0,
+        "windDirection": 180,
+        "fogDensity": 0.05,
+        "windShearExponent": 0.12,
+        "gustIntensity": 0.25
+    }
+}

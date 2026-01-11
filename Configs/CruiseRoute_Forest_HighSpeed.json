@@ -1,0 +1,80 @@
+{
+    "configName": "Forest Cruise Route - High Speed",
+    "description": "High speed cruise mission at 12m/s with moderate wind",
+    "version": "1.0",
+    "mission": {
+        "type": "Waypoint",
+        "sceneName": "Forest",
+        "missionName": "High Speed Cruise",
+        "description": "Fast cruise through forest waypoints",
+        "disasterSettings": {
+            "numberOfFires": 0,
+            "firePositions": [],
+            "photoDistance": 20,
+            "requirePhoto": false,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLockerPositions": [],
+            "useRandomDeliveryPosition": false,
+            "skipPickup": false
+        },
+        "waypointSettings": {
+            "waypointPositions": [
+                {
+                    "x": 50,
+                    "y": 40,
+                    "z": 50
+                },
+                {
+                    "x": 200,
+                    "y": 60,
+                    "z": 100
+                },
+                {
+                    "x": 350,
+                    "y": 50,
+                    "z": 200
+                },
+                {
+                    "x": 400,
+                    "y": 70,
+                    "z": 350
+                },
+                {
+                    "x": 250,
+                    "y": 55,
+                    "z": 400
+                },
+                {
+                    "x": 100,
+                    "y": 45,
+                    "z": 300
+                }
+            ],
+            "reachThreshold": 12,
+            "cruiseSpeed": 12.0,
+            "enableCruiseControl": true,
+            "speedTolerance": 1.5,
+            "loopWaypoints": true
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.0,
+        "baseWindSpeed": 10.0,
+        "windDirection": 180,
+        "fogDensity": 0.1,
+        "windShearExponent": 0.3,
+        "gustIntensity": 1.2
+    }
+}

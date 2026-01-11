@@ -1,0 +1,71 @@
+{
+    "configName": "City Recon Mission - Standard",
+    "description": "Reconnaissance mission requiring precise hovering at observation points",
+    "version": "1.0",
+    "mission": {
+        "type": "Recon",
+        "sceneName": "City",
+        "missionName": "Urban Reconnaissance",
+        "description": "Visit recon points and maintain stable hover for observation",
+        "disasterSettings": {
+            "numberOfFires": 0,
+            "firePositions": [],
+            "photoDistance": 20,
+            "requirePhoto": false,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLockerPositions": [],
+            "useRandomDeliveryPosition": false,
+            "skipPickup": false
+        },
+        "waypointSettings": {
+            "waypointPositions": [],
+            "reachThreshold": 5,
+            "cruiseSpeed": 0,
+            "enableCruiseControl": false,
+            "speedTolerance": 1,
+            "loopWaypoints": false
+        },
+        "reconSettings": {
+            "reconPoints": [
+                {
+                    "x": 150,
+                    "y": 60,
+                    "z": 150
+                },
+                {
+                    "x": 300,
+                    "y": 70,
+                    "z": 200
+                },
+                {
+                    "x": 250,
+                    "y": 65,
+                    "z": 350
+                }
+            ],
+            "reachThreshold": 10,
+            "hoverTime": 3,
+            "hoverStabilityThreshold": 2
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.0,
+        "baseWindSpeed": 3.0,
+        "windDirection": 45,
+        "fogDensity": 0.0,
+        "windShearExponent": 0.3,
+        "gustIntensity": 0.5
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "configName": "Test Cargo Delivery - Near Distance",
+    "description": "Test cargo delivery with close coordinates (within 100m)",
+    "version": "1.0",
+    "mission": {
+        "type": "Cargo",
+        "sceneName": "OutdoorsScene",
+        "missionName": "Near Cargo Test",
+        "description": "Short distance delivery test for quick validation",
+        "disasterSettings": {
+            "numberOfFires": 0,
+            "firePositions": [],
+            "photoDistance": 20,
+            "requirePhoto": true,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 5,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 50,
+                "y": 0,
+                "z": 50
+            },
+            "deliveryLockerPositions": [
+                {
+                    "x": 20,
+                    "y": 3.6,
+                    "z": 20
+                },
+                {
+                    "x": 20,
+                    "y": 3.6,
+                    "z": -20
+                },
+                {
+                    "x": -20,
+                    "y": 3.6,
+                    "z": -20
+                },
+                {
+                    "x": -20,
+                    "y": 3.6,
+                    "z": 20
+                }
+            ],
+            "useRandomDeliveryPosition": true,
+            "skipPickup": true
+        },
+        "waypointSettings": {
+            "waypointPositions": [],
+            "reachThreshold": 5
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.0,
+        "baseWindSpeed": 2.0,
+        "windDirection": 45,
+        "fogDensity": 0.0,
+        "windShearExponent": 0.1,
+        "gustIntensity": 0.2
+    }
+}

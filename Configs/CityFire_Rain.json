@@ -1,0 +1,81 @@
+{
+    "configName": "City Fire Detection - Light Rain",
+    "description": "Urban fire detection mission with light rain and moderate wind",
+    "version": "1.0",
+    "mission": {
+        "type": "DisasterDetection",
+        "sceneName": "City",
+        "missionName": "City Fire Detection - Rainy",
+        "description": "Locate fire points in rainy conditions",
+        "disasterSettings": {
+            "numberOfFires": 5,
+            "firePositions": [
+                {
+                    "x": 100,
+                    "y": 5,
+                    "z": 50
+                },
+                {
+                    "x": 200,
+                    "y": 5,
+                    "z": 100
+                },
+                {
+                    "x": 150,
+                    "y": 5,
+                    "z": 150
+                },
+                {
+                    "x": 80,
+                    "y": 5,
+                    "z": 200
+                },
+                {
+                    "x": 250,
+                    "y": 5,
+                    "z": 80
+                },
+                {
+                    "x": 120,
+                    "y": 5,
+                    "z": 180
+                },
+                {
+                    "x": 220,
+                    "y": 5,
+                    "z": 60
+                }
+            ],
+            "photoDistance": 20,
+            "requirePhoto": true,
+            "randomizePositions": true
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "deliveryLockerPositions": [],
+            "useRandomDeliveryPosition": false,
+            "skipPickup": false
+        },
+        "waypointSettings": {
+            "waypointPositions": [],
+            "reachThreshold": 5
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.3,
+        "baseWindSpeed": 10.0,
+        "windDirection": 45,
+        "fogDensity": 0.2,
+        "windShearExponent": 0.3,
+        "gustIntensity": 1.5
+    }
+}

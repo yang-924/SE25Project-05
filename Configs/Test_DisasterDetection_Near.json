@@ -1,0 +1,61 @@
+{
+    "configName": "Test Disaster Detection - Near Distance",
+    "description": "Test disaster detection with close fire points (within 150m)",
+    "version": "1.0",
+    "mission": {
+        "type": "DisasterDetection",
+        "sceneName": "OutdoorsScene",
+        "missionName": "Near Fire Detection Test",
+        "description": "Detect 3 nearby fire points for quick testing",
+        "disasterSettings": {
+            "numberOfFires": 3,
+            "firePositions": [
+                {
+                    "x": 30,
+                    "y": 0,
+                    "z": 30
+                },
+                {
+                    "x": 60,
+                    "y": 0,
+                    "z": 20
+                },
+                {
+                    "x": 45,
+                    "y": 0,
+                    "z": 70
+                }
+            ],
+            "photoDistance": 30,
+            "requirePhoto": true,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 5,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 100,
+                "y": 0,
+                "z": 100
+            },
+            "deliveryLockerPositions": [],
+            "useRandomDeliveryPosition": false,
+            "skipPickup": false
+        },
+        "waypointSettings": {
+            "waypointPositions": [],
+            "reachThreshold": 5
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.3,
+        "baseWindSpeed": 5.0,
+        "windDirection": 90,
+        "fogDensity": 0.1,
+        "windShearExponent": 0.15,
+        "gustIntensity": 0.3
+    }
+}

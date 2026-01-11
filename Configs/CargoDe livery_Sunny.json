@@ -1,0 +1,66 @@
+{
+    "configName": "City Cargo Delivery - Sunny",
+    "description": "Standard cargo delivery mission with good weather",
+    "version": "1.0",
+    "mission": {
+        "type": "Cargo",
+        "sceneName": "City",
+        "missionName": "Cargo Delivery",
+        "description": "Deliver package to random locker location",
+        "disasterSettings": {
+            "numberOfFires": 0,
+            "firePositions": [],
+            "photoDistance": 20,
+            "requirePhoto": true,
+            "randomizePositions": false
+        },
+        "cargoSettings": {
+            "pickupLocation": {
+                "x": 0,
+                "y": 5,
+                "z": 0
+            },
+            "deliveryLocation": {
+                "x": 500,
+                "y": 0,
+                "z": 500
+            },
+            "deliveryLockerPositions": [
+                {
+                    "x": 500,
+                    "y": 0,
+                    "z": 500
+                },
+                {
+                    "x": 600,
+                    "y": 0,
+                    "z": 400
+                },
+                {
+                    "x": 450,
+                    "y": 0,
+                    "z": 550
+                },
+                {
+                    "x": 550,
+                    "y": 0,
+                    "z": 450
+                }
+            ],
+            "useRandomDeliveryPosition": true,
+            "skipPickup": true
+        },
+        "waypointSettings": {
+            "waypointPositions": [],
+            "reachThreshold": 5
+        }
+    },
+    "weather": {
+        "rainIntensity": 0.0,
+        "baseWindSpeed": 3.0,
+        "windDirection": 0,
+        "fogDensity": 0.0,
+        "windShearExponent": 0.3,
+        "gustIntensity": 0.8
+    }
+}
